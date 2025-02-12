@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp LEFT_BRACKET   &kp F7     &kp F8        &kp F9  &kp F10                         &kp LS(NUMBER_1)        &kp RS(EQUAL)  &kp LS(NUMBER_8)         &kp LS(NUMBER_9)  &kp LS(NUMBER_2)
-&kp RIGHT_BRACKET  &kp F4     &kp F5        &kp F6  &kp F11  &trans      &trans     &trans                  &trans         &trans                   &trans            &kp SLASH
-&kp LG(L)          &kp LG(E)  &kp F2        &kp F6  &kp F12  &trans      &trans     &kp LS(LG(LEFT_ARROW))  &trans         &kp LS(LG(RIGHT_ARROW))  &trans            &kp QUESTION
-&trans             &kp LCTRL  &kp LEFT_ALT  &trans  &trans   &trans      &kp LC(C)  &kp LC(V)                                                                         &kp UNDERSCORE
+&kp RIGHT_BRACKET     &kp F7     &kp F8        &kp F9  &kp F10                         &kp LS(NUMBER_1)        &kp RS(EQUAL)  &kp LS(NUMBER_8)         &kp LS(NUMBER_9)  &kp LS(NUMBER_2)
+&kp NON_US_BACKSLASH  &kp F4     &kp F5        &kp F6  &kp F11  &trans      &trans     &trans                  &trans         &trans                   &trans            &kp SLASH
+&kp LG(L)             &kp LG(E)  &kp F2        &kp F6  &kp F12  &trans      &trans     &kp LS(LG(LEFT_ARROW))  &trans         &kp LS(LG(RIGHT_ARROW))  &trans            &kp QUESTION
+&trans                &kp LCTRL  &kp LEFT_ALT  &trans  &trans   &trans      &kp LC(C)  &kp LC(V)                                                                         &kp UNDERSCORE
             >;
         };
 
