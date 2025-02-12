@@ -53,14 +53,6 @@
 
             label = "TO_LAYER_0";
         };
-
-        meiryo: meiryo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_2>, <&macro_tap>;
-
-            label = "MEIRYO";
-        };
     };
 
     behaviors {
