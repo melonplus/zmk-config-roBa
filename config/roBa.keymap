@@ -99,7 +99,7 @@
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp INTERNATIONAL_1  &kp INT2             &kp INTERNATIONAL_3  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp INTERNATIONAL_6  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans               &trans               &trans               &trans               &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                                              &trans
+&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
