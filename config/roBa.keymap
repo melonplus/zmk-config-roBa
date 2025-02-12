@@ -27,7 +27,7 @@
         };
 
         muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+            bindings = <&meiryo INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -43,11 +43,23 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        meiryo: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp NUMBER_1>,
+                <&macro_tap>,
+                <&kp LEFT_ALT &kp H &kp F &kp F &kp M &kp E &kp I &kp TAB>;
+
             label = "TO_LAYER_0";
+        };
+
+        meiryo: meiryo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2>, <&macro_tap>;
+
+            label = "MEIRYO";
         };
     };
 
@@ -55,7 +67,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&meiryo>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -79,7 +91,7 @@
         FUNCTION {
             bindings = <
 &kp RIGHT_BRACKET  &kp F7     &kp F8        &kp F9  &kp F10                         &kp LS(NUMBER_1)        &kp RS(EQUAL)  &kp LS(NUMBER_8)         &kp LS(NUMBER_9)  &kp LS(NUMBER_2)
-&kp BACKSLASH      &kp F4     &kp F5        &kp F6  &kp F11  &trans      &trans     &trans                  &trans         &trans                   &trans            &kp SLASH
+&kp BACKSLASH      &kp F4     &kp F5        &kp F6  &kp F11  &trans      &trans     &trans                  &meiryo        &trans                   &trans            &kp SLASH
 &kp LG(L)          &kp LG(E)  &kp F2        &kp F6  &kp F12  &trans      &trans     &kp LS(LG(LEFT_ARROW))  &trans         &kp LS(LG(RIGHT_ARROW))  &trans            &kp QUESTION
 &trans             &kp LCTRL  &kp LEFT_ALT  &trans  &trans   &trans      &kp LC(C)  &kp LC(V)                                                                         &kp UNDERSCORE
             >;
