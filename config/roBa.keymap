@@ -56,7 +56,7 @@
         new_macro2: new_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp H &kp N>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp H &kp N>;
 
             label = "NEW_MACRO2";
         };
