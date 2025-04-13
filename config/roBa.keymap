@@ -48,7 +48,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_ALT &kp H &kp F &kp F &kp M &kp E &kp I &kp TAB>;
+                <&kp LC(A) &kp LC(A) &kp LEFT_ALT &kp H &kp F &kp F &kp M &kp E &kp I &kp TAB>;
 
             label = "TO_LAYER_0";
         };
