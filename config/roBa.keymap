@@ -52,14 +52,6 @@
 
             label = "TO_LAYER_0";
         };
-
-        N: N {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp N &kp N>;
-
-            label = "N";
-        };
     };
 
     behaviors {
